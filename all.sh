@@ -168,12 +168,27 @@ function install {
     #safe_fetch https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny_fp16.safetensors $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_canny_fp16.safetensors
     #safe_fetch https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose_fp16.safetensors $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_openpose_fp16.safetensors
     #safe_fetch https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_seg_fp16.safetensors $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_seg_fp16.safetensors
+    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11e_sd15_ip2p.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11e_sd15_ip2p.pth
+    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11e_sd15_shuffle.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11e_sd15_shuffle.pth
+    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11f1p_sd15_depth.pth
+    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_inpaint.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_inpaint.pth
+    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_lineart.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_lineart.pth
+    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_mlsd.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_mlsd.pth
+    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_normalbae.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_normalbae.pth
+    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_scribble.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_scribble.pth
+    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_softedge.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_softedge.pth
+    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15s2_lineart_anime.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15s2_lineart_anime.pth
 
     #Download Model & VAE
     safe_fetch https://huggingface.co/XpucT/Deliberate/resolve/main/Deliberate_v2.safetensors $BASEPATH/models/Stable-diffusion Deliberate_v2.safetensors
+    safe_fetch https://huggingface.co/tomy-chen-1/Deliberate/resolve/main/chilloutmix_NiPrunedFp32Fix.safetensors $BASEPATH/models/Stable-diffusion chilloutmix_NiPrunedFp32Fix.safetensors
+    safe_fetch https://huggingface.co/tomy-chen-1/Deliberate/resolve/main/AnythingV5_v5PrtRE.safetensors $BASEPATH/models/Stable-diffusion AnythingV5_v5PrtRE.safetensors
+    safe_fetch https://huggingface.co/tomy-chen-1/Deliberate/resolve/main/CounterfeitV30_v30.safetensors $BASEPATH/models/Stable-diffusion CounterfeitV30_v30.safetensors
+    safe_fetch https://huggingface.co/tomy-chen-1/Deliberate/resolve/main/nyanMix_230303Absurd2.safetensors $BASEPATH/models/Stable-diffusion nyanMix_230303Absurd2.safetensors
     safe_fetch https://huggingface.co/Yukihime256/840000/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt $BASEPATH/models/VAE vae-ft-mse-840000-ema-pruned.ckpt
-
-    #Install Dependencies
+    safe_fetch https://huggingface.co/tomy-chen-1/Deliberate/resolve/main/%E9%80%9A%E7%94%A8Vae.vae.pt $BASEPATH/models/VAE %E9%80%9A%E7%94%A8Vae.vae.pt
+   
+   #Install Dependencies
     sed_for installation $BASEPATH
     cd $BASEPATH && python launch.py --skip-torch-cuda-test && echo "Installation Completed" > $BASEPATH/.install_status
 }
