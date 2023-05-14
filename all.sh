@@ -165,19 +165,19 @@ function install {
 
     #Download Controlnet Models
     safe_fetch https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11f1e_sd15_tile_fp16.safetensors $BASEPATH/extensions/sd-webui-controlnet/models control_v11f1e_sd15_tile_fp16.safetensors
-    #safe_fetch https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny_fp16.safetensors $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_canny_fp16.safetensors
-    #safe_fetch https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose_fp16.safetensors $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_openpose_fp16.safetensors
-    #safe_fetch https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_seg_fp16.safetensors $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_seg_fp16.safetensors
-    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11e_sd15_ip2p.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11e_sd15_ip2p.pth
-    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11e_sd15_shuffle.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11e_sd15_shuffle.pth
-    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11f1p_sd15_depth.pth
-    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_inpaint.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_inpaint.pth
-    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_lineart.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_lineart.pth
-    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_mlsd.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_mlsd.pth
-    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_normalbae.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_normalbae.pth
-    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_scribble.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_scribble.pth
-    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_softedge.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_softedge.pth
-    #safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15s2_lineart_anime.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15s2_lineart_anime.pth
+    safe_fetch https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny_fp16.safetensors $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_canny_fp16.safetensors
+    safe_fetch https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose_fp16.safetensors $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_openpose_fp16.safetensors
+    safe_fetch https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_seg_fp16.safetensors $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_seg_fp16.safetensors
+    safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11e_sd15_ip2p.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11e_sd15_ip2p.pth
+    safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11e_sd15_shuffle.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11e_sd15_shuffle.pth
+    safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11f1p_sd15_depth.pth
+    safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_inpaint.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_inpaint.pth
+    safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_lineart.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_lineart.pth
+    safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_mlsd.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_mlsd.pth
+    safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_normalbae.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_normalbae.pth
+    safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_scribble.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_scribble.pth
+    safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_softedge.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15_softedge.pth
+    safe_fetch https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15s2_lineart_anime.pth $BASEPATH/extensions/sd-webui-controlnet/models control_v11p_sd15s2_lineart_anime.pth
 
     #Download Model & VAE
     safe_fetch https://huggingface.co/XpucT/Deliberate/resolve/main/Deliberate_v2.safetensors $BASEPATH/models/Stable-diffusion Deliberate_v2.safetensors
